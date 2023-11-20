@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <%-include("partials/header")-%>
+    <h1><%=change%></h1>
+    <%=d%>
+   
+    <% nepa.forEach(function(c){ %>
+    <h1><%= c.titling %></h1>
+    <p><%= c.posting.substring(0,400)%>
+    <a href="/posts/<%= encodeURIComponent(c.titling) %>">Read more</a>
+    <% }); %>
+    
+    <%-include("partials/footer")-%>
+</body>
+</html>

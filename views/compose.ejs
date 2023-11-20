@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+
+    <%-include("partials/header")-%>
+
+    <form action="/compose" method="post" class="container">
+        
+    <div class="form-group">
+        <label >Title</label>
+
+        <input type="text" class="form-control" name="n1" placeholder="">
+
+        <label >Post</label>
+        <textarea class="form-control" name="t1" row="2" colum="30" ></textarea>
+        <br>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+</form>
+<%-include("partials/footer")-%>
+</body>
+</html>
